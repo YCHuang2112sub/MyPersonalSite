@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- IMPORTANT: base path for GitHub Pages -->
+  <base href="/">
+
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.webp" alt="YuCheng Huang" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="YuCheng Huang">YuCheng Huang</h1>
+
+          <p class="title">Software Engineer / Application Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:ychuang2@bu.edu" class="contact-link">ychuang2@bu.edu</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+886922896186" class="contact-link">+886 922896186</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1996-12-06">Dec 06, 1996</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Tainan, TW</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <!--
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+-->
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I am a software engineer interested in building artificial intelligence applications, especially systems
+            involving agentic behavior and foundation models. My interests include learning how large-scale data is
+            processed, how models are trained and integrated into applications, and how autonomous systems behave in
+            practice. I enjoy hands-on development, such as implementing data pipelines, experimenting with model
+            training, connecting models to applications, and analyzing system behavior through testing and iteration. I
+            am seeking opportunities to learn from real-world projects, strengthen my theoretical foundations, and
+            contribute to practical, impactful intelligent software systems.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for iOS and Android.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Boston University</h4>
+
+              <span>Jan 2023 — May 2024</span>
+
+              <p class="timeline-text">
+                Master of Science in Computer Science. Boston, MA.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">National Yang Ming Chiao Tung University</h4>
+
+              <span>Sep 2019 — Jan 2022</span>
+
+              <p class="timeline-text">
+                Master of Engineering in Electrical and Computer Engineering.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">University of Illinois Urbana-Champaign</h4>
+
+              <span>Sep 2018 — Dec 2018</span>
+
+              <p class="timeline-text">
+                Exchange Program.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">National Chiao Tung University</h4>
+
+              <span>Sep 2015 — Jun 2019</span>
+
+              <p class="timeline-text">
+                Bachelor of Engineering in Electrical and Computer Engineering.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Engineer, Teal Corp.</h4>
+
+              <span>Feb 2025 — Oct 2025</span>
+
+              <p class="timeline-text">
+                Designed and implemented a dual-frequency oscillator model. Developed a capacitor coupling verification
+                tool in Python.
+              </p>
+
+            </li>
+
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Research & Project Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <!--
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">StoryFlow: AI-Powered Visual Novel Editor</h4>
+
+              <span>Jul 2024 — Present</span>
+
+              <p class="timeline-text">
+                Developed a flow-based Visual Novel editor featuring AI-powered voiceover (TTS), node-based logic
+                (similar to ComfyUI), and a WYSIWYG scene editor.
+                Integrated Gemini API for LLM-driven branching and automated health checks for story staging. Support
+                for desktop (.exe) and mobile (Android/iOS) export.
+              </p>
+
+            </li>
+            -->
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">PromptsHub: AlphaMind Edition</h4>
+
+              <span>Oct 2023 — Present</span>
+
+              <p class="timeline-text">
+                Engineered a high-performance workspace for AI-human collaboration featuring real-time screen OCR,
+                vision chat (Gemini Vision), and a multi-pane development environment.
+                Implemented a 3-column "Monitor Studio" for persistent region monitoring, system audio transcription
+                with FFT visualizers, and a privacy mode to exclude workspace captures.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Text Guided Image Integration</h4>
+
+              <span>Feb 2024 — Jun 2024</span>
+
+              <p class="timeline-text">
+                Multimodal framework and dataset (8.2k pairs) for text-to-image synthesis, leveraging ControlNet for
+                high-fidelity character-background integration. Built an automated bias-measurement pipeline with CLIP
+                and InceptionV3 evaluations.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">SlideTalk: AI-Powered Presentation Narration</h4>
+
+              <span>Sep 2023 — Present</span>
+
+              <p class="timeline-text">
+                SlideTalk is a powerful AI-assisted tool that utilizes Google's Gemini models to automatically generate
+                professional narration, voiceovers, speaker scripts, and notes for your presentation slides.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Sticker Gacha: Digital Stamp Collection System</h4>
+
+              <span>Nov 2022 — Mar 2023</span>
+
+              <p class="timeline-text">
+                A standalone collection app for Chibi stickers featuring a Gemini AI-powered Gacha system and infinite
+                expression generation. Generates images from a curated pool based on given character, topic, and style
+                references, all within a premium shimmering UI.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Utilizing Range Deletes as a Query Filter in LSM-Based RocksDB</h4>
+
+              <span>Apr 2023 — Present</span>
+
+              <p class="timeline-text">
+                Targeted inefficiencies in RocksDB point queries by proposing and prototyping level-wise and SuRF-based
+                range-delete filters, reducing unnecessary disk I/O and accelerating query speed.
+                Diagnosed system bottlenecks with Valgrind and Intel VTune Flame Graphs, then introduced new range
+                tombstone propagation during flush and compaction, improving operational efficiency.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">AI Frameworks (LangChain, Diffusers, RAG)</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">ML Frameworks (PyTorch, TensorFlow)</h5>
+                <data value="95">95%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 95%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python & C++</h5>
+                <data value="95">95%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 95%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Linux & Matlab</h5>
+                <data value="85">85%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>AI & Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Data Systems</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>AI & Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Data Systems</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <!--
+            <li class="project-item  active" data-filter-item data-category="ai & applications"
+              data-images="./assets/images/project-storyflow.png,./assets/images/storyflow_scene.png,./assets/images/storyflow_voice.png"
+              data-desc="Flow-based Visual Novel Editor with AI-powered voice over, node-based logic, and advanced story development staging. Features node-based script control and a WYSIWYG scene editor.">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-storyflow.png" alt="StoryFlow" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">StoryFlow</h3>
+
+                <p class="project-category">AI & Applications</p>
+
+              </a>
+            </li>
+            -->
+
+            <li class="project-item  active" data-filter-item data-category="ai & applications"
+              data-images="./assets/images/project-promptshub.webp"
+              data-desc="High-performance workspace for AI-human collaboration. Transforms desktop into an intelligent environment capturing text/vision in real-time. Features Monitor Studio and vision chat.">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-promptshub.webp" alt="PromptsHub" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">PromptsHub</h3>
+
+                <p class="project-category">AI & Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="data systems"
+              data-images="./assets/images/project-rocksdb.webp"
+              data-desc="Targeted inefficiencies in RocksDB point queries by proposing and prototyping level-wise and SuRF-based range-delete filters, reducing unnecessary disk I/O and accelerating query speed.">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-rocksdb.webp" alt="RocksDB Range Deletes" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">RocksDB Range Deletes</h3>
+
+                <p class="project-category">Data Systems</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="ai & applications"
+              data-images="./assets/images/image_integration.webp"
+              data-desc="Multimodal framework and dataset (8.2k pairs) for text-to-image synthesis, leveraging ControlNet for high-fidelity character-background integration.">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/image_integration.webp" alt="Text Guided Image Integration" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Text Guided Image Integration</h3>
+
+                <p class="project-category">AI & Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="ai & applications"
+              data-images="./assets/images/slidetalk.webp"
+              data-desc="SlideTalk is a powerful AI-assisted tool that utilizes Google's Gemini models to automatically generate professional narration, voiceovers, speaker scripts, and notes for your presentation slides.">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/slidetalk.webp" alt="SlideTalk" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">SlideTalk</h3>
+
+                <p class="project-category">AI & Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="ai & applications"
+              data-images="./assets/images/sticker_gacha.webp"
+              data-desc="A standalone collection app for Chibi stickers featuring a Gemini AI-powered Gacha system and infinite expression generation. Generates images from a curated pool based on given character, topic, and style references, all within a premium shimmering UI.">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/sticker_gacha.webp" alt="Sticker Gacha" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Sticker Gacha</h3>
+
+                <p class="project-category">AI & Applications</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Inference-Time Debiasing in T2I Models" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Generative AI</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024-09-29">Sep 29, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Inference-Time Debiasing in T2I Models</h3>
+
+                  <p class="blog-text">
+                    Exploring prompt iteration techniques to control demographic distributions in text-to-image
+                    generation.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Optimizing Query Speed in RocksDB" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Database Systems</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2023-12-15">Dec 15, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Optimizing Query Speed in RocksDB</h3>
+
+                  <p class="blog-text">
+                    Prototyping level-wise and SuRF-based range-delete filters to reduce disk I/O bottlenecks.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Mixed-Signal IC Design: ADC Timing Schemes" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Hardware Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2021-11-20">Nov 20, 2021</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Mixed-Signal IC Design: ADC Timing Schemes</h3>
+
+                  <p class="blog-text">
+                    Addressing sampling time challenges in Extended Counting ADCs with custom timing solutions.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+      -->
+
+
+
+
+
+      <!--
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117511.45870023681!2d120.1517595561501!3d22.996160133178505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e7663e30f6071%3A0x770ecd6d73f32486!2sTainan%20City!5e0!3m2!1sen!2stw!4v1706064000000!5m2!1sen!2stw"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+      -->
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - #PROJECT MODAL
+  -->
+
+  <div class="modal-container" data-project-modal-container>
+
+    <div class="overlay" data-overlay></div>
+
+    <section class="project-modal">
+
+      <button class="modal-close-btn" data-project-modal-close-btn>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="project-modal-content">
+        <div class="modal-gallery">
+          <div class="modal-gallery-main">
+            <img src="" alt="" data-project-modal-img>
+          </div>
+          <div class="modal-gallery-grid" data-project-gallery-grid>
+            <!-- Thumbnails will be injected here -->
+          </div>
+        </div>
+
+        <div class="project-modal-info">
+          <h3 class="h3 modal-title" data-project-modal-title>Project Name</h3>
+          <p class="modal-text" data-project-modal-text>Project description goes here.</p>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
